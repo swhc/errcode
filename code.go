@@ -5,17 +5,16 @@ import (
 )
 
 func init() {
-	errors.Register(ErrMatchNotExist, 400, "match not found.")
-	errors.Register(ErrMatchLineupNotData, 400, "lineup no data.")
-	errors.Register(ErrDataNotExist, 400, "no data.")
-	errors.Register(ErrTeamNotExist, 400, "team not found.")
-	errors.Register(ErrPlayerNotExist, 400, "player not found.")
+	errors.Register(ErrSdkMatchNotExist, 400, "match not found.")
+	errors.Register(ErrSdkMatchLineupNotData, 400, "lineup no data.")
+	errors.Register(ErrSdkDataNotExist, 400, "no data.")
+	errors.Register(ErrSdkTeamNotExist, 400, "team not found.")
+	errors.Register(ErrSdkPlayerNotExist, 400, "player not found.")
 
-	errors.Register(ErrSystemDatabaseErr, 500, "database err")
-	errors.Register(ErrSystemRedisErr, 500, "redis err")
-	errors.Register(ErrSystemJsonEncodeErr, 500, "json encode err")
-	errors.Register(ErrSystemJsonDecodeErr, 500, "json decode err")
-	errors.Register(ErrSystemProtoEncodeErr, 500, "proto encode err")
-	errors.Register(ErrSystemProtoDecodeErr, 500, "proto decode err")
+	errors.Register(ErrSdkSystemDatabaseErr, 500, "database err")
+	errors.Register(ErrSdkSystemRedisErr, 500, "redis err")
+	errors.Register(ErrSdkSystemJsonEncodeErr, 500, "json encode err")
+	errors.Register(ErrSdkSystemJsonDecodeErr, 500, "json decode err")
+	errors.Register(ErrSdkSystemProtoEncodeErr, 500, "proto encode err")
+	errors.Register(ErrSdkSystemProtoDecodeErr, 500, "proto decode err")
 }
-

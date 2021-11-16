@@ -4,46 +4,45 @@ package errors_map
 
 // sdk : match
 const (
-	// ErrMatchNotExist - 400: match not found.
-	ErrMatchNotExist = iota + 020101
+	// ErrSdkMatchNotExist - 400: match not found.
+	ErrSdkMatchNotExist = iota + 020101
 
-	// ErrMatchLineupNotData - 400: lineup no data.
-	ErrMatchLineupNotData
+	// ErrSdkMatchLineupNotData - 400: lineup no data.
+	ErrSdkMatchLineupNotData
 
-	// ErrDataNotExist - 400: no data.
-	ErrDataNotExist
+	// ErrSdkDataNotExist - 400: no data.
+	ErrSdkDataNotExist
 )
 
 // sdk :  team
 const (
-	// ErrTeamNotExist - 400: team not found.
-	ErrTeamNotExist = iota + 020201
+	// ErrSdkTeamNotExist - 400: team not found.
+	ErrSdkTeamNotExist = iota + 020201
 )
 
 // sdk :  player
 const (
-	// ErrPlayerNotExist - 400: player not found.
-	ErrPlayerNotExist = iota + 020301
+	// ErrSdkPlayerNotExist - 400: player not found.
+	ErrSdkPlayerNotExist = iota + 020301
 )
 
 //sdk :  system
 const (
-	// ErrSystemDatabaseErr - 500: database err
-	ErrSystemDatabaseErr = iota + 020401
+	// ErrSdkSystemDatabaseErr - 500: database err
+	ErrSdkSystemDatabaseErr = iota + 020401
 
-	// ErrSystemRedisErr - 500: redis err
-	ErrSystemRedisErr
+	// ErrSdkSystemRedisErr - 500: redis err
+	ErrSdkSystemRedisErr
 
-	// ErrSystemJsonEncodeErr - 500: json encode err
-	ErrSystemJsonEncodeErr
+	// ErrSdkSystemJsonEncodeErr - 500: json encode err
+	ErrSdkSystemJsonEncodeErr
 
-	// ErrSystemJsonDecodeErr - 500: json decode err
-	ErrSystemJsonDecodeErr
+	// ErrSdkSystemJsonDecodeErr - 500: json decode err
+	ErrSdkSystemJsonDecodeErr
 
-	// ErrSystemProtoEncodeErr - 500: proto encode err
-	ErrSystemProtoEncodeErr
+	// ErrSdkSystemProtoEncodeErr - 500: proto encode err
+	ErrSdkSystemProtoEncodeErr
 
-	// ErrSystemProtoDecodeErr - 500: proto decode err
-	ErrSystemProtoDecodeErr
+	// ErrSdkSystemProtoDecodeErr - 500: proto decode err
+	ErrSdkSystemProtoDecodeErr
 )
-
