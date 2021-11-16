@@ -1,4 +1,4 @@
-package errors_map
+package errcode
 
 func init() {
 	// init register sdk code

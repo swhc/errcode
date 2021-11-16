@@ -1,4 +1,4 @@
-package errors_map
+package errcode
 
 //go:generate codegen -type=int
 

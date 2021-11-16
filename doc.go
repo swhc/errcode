@@ -5,6 +5,6 @@
 // StatusForbidden                    = 403 // RFC 7231, 6.5.3
 // StatusNotFound                     = 404 // RFC 7231, 6.5.4
 // StatusInternalServerError          = 500 // RFC 7231, 6.6.1
-package errors_map
+package errcode
 
 

@@ -1,1 +1,1 @@
-package errors_map
+package errcode

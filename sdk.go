@@ -1,6 +1,6 @@
 // 所有sdk相关错误 板块 02开头，其余看具体code
 
-package errors_map
+package errcode
 
 import "github.com/mongofs/errors"
 
