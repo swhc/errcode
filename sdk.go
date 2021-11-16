@@ -4,26 +4,32 @@ package errors_map
 
 // sdk : match
 const (
-	// ErrSdkMatchNotExist - 400: match not found.
+	// ErrSdkMatchNotExist - 500: match not found.
 	ErrSdkMatchNotExist = iota + 020101
 
-	// ErrSdkMatchLineupNotData - 400: lineup no data.
+	// ErrSdkMatchLineupNotData - 500: lineup no data.
 	ErrSdkMatchLineupNotData
 
-	// ErrSdkDataNotExist - 400: no data.
+	// ErrSdkDataNotExist - 500: no data.
 	ErrSdkDataNotExist
 )
 
 // sdk :  team
 const (
-	// ErrSdkTeamNotExist - 400: team not found.
+	// ErrSdkTeamNotExist - 500: team not found.
 	ErrSdkTeamNotExist = iota + 020201
 )
 
 // sdk :  player
 const (
-	// ErrSdkPlayerNotExist - 400: player not found.
+	// ErrSdkPlayerNotExist - 500: player not found.
 	ErrSdkPlayerNotExist = iota + 020301
+)
+
+// sdk :  params
+const (
+	// ErrSdkParams - 400: params error.
+	ErrSdkParams = iota + 020501
 )
 
 //sdk :  system
