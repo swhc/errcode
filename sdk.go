@@ -68,4 +68,6 @@ func initSdk() {
 	errors.Register(ErrSdkSystemJsonDecodeErr, 500, "json decode err")
 	errors.Register(ErrSdkSystemProtoEncodeErr, 500, "proto encode err")
 	errors.Register(ErrSdkSystemProtoDecodeErr, 500, "proto decode err")
+
+	errors.Register(ErrSdkParams, 500, "params err")
 }
