@@ -2,12 +2,12 @@
 
 package errcode
 
-import "github.com/sowell/errors"
+import "github.com/swhc/errors"
 
 // sdk : match
 const (
 	// ErrSdkMatchNotExist - 500: match not found.
-	ErrSdkMatchNotExist = iota + 020101
+	ErrSdkMatchNotExist = iota + 180101
 
 	// ErrSdkMatchLineupNotData - 500: lineup no data.
 	ErrSdkMatchLineupNotData
@@ -19,25 +19,25 @@ const (
 // sdk :  team
 const (
 	// ErrSdkTeamNotExist - 500: team not found.
-	ErrSdkTeamNotExist = iota + 020201
+	ErrSdkTeamNotExist = iota + 180201
 )
 
 // sdk :  player
 const (
 	// ErrSdkPlayerNotExist - 500: player not found.
-	ErrSdkPlayerNotExist = iota + 020301
+	ErrSdkPlayerNotExist = iota + 180301
 )
 
 // sdk :  params
 const (
 	// ErrSdkParams - 400: params error.
-	ErrSdkParams = iota + 020501
+	ErrSdkParams = iota + 180501
 )
 
 //sdk :  system
 const (
 	// ErrSdkSystemDatabaseErr - 500: database err
-	ErrSdkSystemDatabaseErr = iota + 020401
+	ErrSdkSystemDatabaseErr = iota + 180401
 
 	// ErrSdkSystemRedisErr - 500: redis err
 	ErrSdkSystemRedisErr
@@ -53,11 +53,9 @@ const (
 
 	// ErrSdkSystemProtoDecodeErr - 500: proto decode err
 	ErrSdkSystemProtoDecodeErr
-
 )
 
-
-func initSdk(){
+func initSdk() {
 	errors.Register(ErrSdkMatchNotExist, 500, "match not found.")
 	errors.Register(ErrSdkMatchLineupNotData, 500, "lineup no data.")
 	errors.Register(ErrSdkDataNotExist, 500, "no data.")
@@ -71,4 +69,3 @@ func initSdk(){
 	errors.Register(ErrSdkSystemProtoEncodeErr, 500, "proto encode err")
 	errors.Register(ErrSdkSystemProtoDecodeErr, 500, "proto decode err")
 }
-
