@@ -2,7 +2,7 @@
 
 package errcode
 
-import "github.com/sowell/errors"
+import "github.com/swhc/errors"
 
 // sdk : match
 const (
